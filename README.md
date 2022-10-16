@@ -37,3 +37,4 @@ The sidebar contains the headings i.e About Me, Work
 the footer contains my contact inforamation
 
 <h2>Link to the deployed application</h2>
+<a href="http://week2.informistaan.com/ target="_blank">Click here to view</a>
