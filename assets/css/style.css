@@ -172,7 +172,7 @@ img:hover {
 }
 
 /* Optimizing the website for mobile view so its responsive */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .header{
     flex-direction: column;
     height: auto;
