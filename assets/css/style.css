@@ -203,7 +203,9 @@ img:hover {
     padding-top: 20px;
     min-height: 40px;
   }
-
+.article-container { 
+  border-left: none;
+}
   .smallarticle {
     flex-basis: 100%;
   }
