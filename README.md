@@ -41,3 +41,4 @@ the footer contains my contact inforamation
 
 <h2>Screenshots</h2>
 <img src="https://github.com/awaisav/week2-challenge/blob/main/assets/screenshots/Screenshot%202022-10-17%20at%201.04.55%20AM.png" width="60%" height="500px">
+<img src="https://github.com/awaisav/week2-challenge/blob/main/assets/screenshots/Screenshot%202022-10-17%20at%201.05.15%20AM.png" width="60%" height="500px">
