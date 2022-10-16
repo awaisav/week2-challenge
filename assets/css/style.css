@@ -1,0 +1,229 @@
+/*defining all the variable for re-usability */
+:root{
+  --logo-color: #93f5f5;
+  --font-color: #3e5a77;
+}
+
+body {
+  margin: auto;
+  padding: 0px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: normal;
+}
+a{
+  color: var(--logo-color);
+  text-decoration: none;
+}
+h1 {
+  font-size: 40px;
+  color: var(--font-color);
+  margin-top: 10px;
+}
+
+h2 {
+  font-size: 40px;
+  color: var(--font-color);
+  margin-top: 10px;
+}
+article a{
+  color: var(--font-color);
+  text-decoration: none;
+}
+article a:visited{
+  color: var(--font-color)
+}
+
+
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 70px;
+  background-color: #313939;
+  color: var(--logo-color);
+  text-align: right;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.logo {
+  flex: 1;
+  background-color: var(--logo-color);
+  width: 250px;
+  height: 40px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+/* The nav bar contains the links dispayed in the menu */
+nav{
+  margin-top: 10px;
+  flex-grow: 4;
+  flex-shrink: 4;
+}
+
+ul {
+  list-style: none;
+ 
+}
+li{
+  display: inline-block;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  word-spacing: 3px;
+  border-bottom: 2px solid var(--logo-color);
+  margin-left: 10px;
+}
+.mainsection {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  color: var(--font-color);
+  padding-top: 20px;
+}
+
+/* The hero image displayed under the nav bar */
+.hero-image {
+  background-image: url("../../assets/images/small1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+}
+
+/* This is the side bar and it contains Home, Work, COntact and is displayed on the left side of the screen */
+.aside {
+  flex: 1.5;
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin-bottom: 10px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+/* This is the container for the main articles that contains the about me, procts and contact details */
+.article-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  border-left: 4px solid var(--font-color);
+  flex: 4;
+  padding: 10px 30px;
+  justify-content: space-between;
+  flex-grow: 2;
+  flex-shrink: 2;
+  margin-bottom: 10px;
+  font-family: font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande"
+  "Lucida Sans", Arial, sans-serif;
+}
+
+/* THis is the contianer for the main project i.e Project 1 */
+.bigarticle {
+  height: 200px;
+  flex-basis: 100%;
+}
+
+/* This is the container for the small project images i.e 2 projects displayed in one line in desktop view */
+.smallarticle {
+  height: 150px;
+  flex-basis: 49.2%;
+  margin-top: 10px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+/* Creating the hover effect on images*/
+img:hover {
+  filter: blur(0px);
+  opacity: 1;
+}
+
+/* This is the tag appearing on the projects containing the project names */
+.img-tag {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 20%;
+  bottom: 100px;
+  padding-left: 15px;
+  padding-right: 10px;
+  background-color: var(--logo-color);
+}
+
+/* COntact section */
+.contact-section{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  border-left: 4px solid var(--font-color);
+  flex: 4;
+  padding: 10px 30px;
+  justify-content: space-around;
+  flex-grow: 2;
+  flex-shrink: 2;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+/* Optimizing the website for mobile view so its responsive */
+@media screen and (max-width: 400px) {
+  .header{
+    flex-direction: column;
+    height: auto;
+  }
+  .mainsection {
+    flex-direction: column;
+  }
+  .logo{
+    width: 150px;
+  height: 30px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+  
+  h2 {
+    font-size: 30px;
+  }
+  nav{
+    text-align: left;
+  }
+  li{
+    padding-top: 10px;
+  }
+  .aside {
+    text-align: center;
+    padding-top: 20px;
+    min-height: 40px;
+  }
+
+  .smallarticle {
+    flex-basis: 100%;
+  }
+
+  .bigarticle{
+    width: 100%; 
+  }
+
+  .contact-section{
+    border: none;
+    flex-direction: column;
+    text-align: center;
+  }
+  .contact-section address{
+    padding-bottom: 5px;
+    width: 100%;
+  }
+
+  .contact-section article{
+    width: 100%;
+    padding-bottom: 5px;
+  }
+}
