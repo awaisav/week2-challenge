@@ -24,7 +24,7 @@ The header contains the following
   <li>Menu</li>
 </ul>
 
-<h3>Heor Image</h3>
+<h3>Hero Image</h3>
 The full size image displayed after the navigation bar
 
 <h3>Main Section</h3>
